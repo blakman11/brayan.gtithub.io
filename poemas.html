@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poemas</title>
+    
+    <style>
+    body {
+        font-family: "Georgia", serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom right, #ffe6e6, #fff0f5);
+        color: #5a3d3d;
+    }
+    
+    /* Header Styles */
+    header {
+        background: #ffc1cc;
+        padding: 1.5rem 0;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Navigation Styles */
+    nav ol {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    
+    nav ol li {
+        background: #fff0f5;
+        border: 2px solid #ff99aa;
+        border-radius: 10px;
+        padding: 0.5rem 1rem;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    
+    nav ol li:hover {
+        background-color: #ffe6eb;
+        transform: scale(1.1);
+    }
+    
+    nav ol li a {
+        text-decoration: none;
+        color: #c44d56;
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+    }
+    
+    nav ol li a:hover {
+        color: #8b0000;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Romantic Background for the Header */
+    header::before {
+        content: "♥";
+        display: block;
+        font-size: 2rem;
+        color: #ff99aa;
+        text-align: center;
+        margin-bottom: 1rem;
+        animation: pulse 2s infinite;
+    }
+    
+    /* Animation */
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        50% {
+            transform: scale(1.2);
+            opacity: 0.8;
+        }
+    }
+</style>
+</head>
+<body>
+   <header> 
+    <nav>
+        <ol>
+            <li><a href="Nuestro_día.html">Nuestro día</a></li>
+            <li> <a href="La_distancia.html">La distancia</a></li>
+            <li><a href="Gloria_mi_luz.html">Gloria, mi luz</a></li>
+            <li><a href="Huellas_de_amor.html">Huellas de amor</a></li>
+            <li><a href="Los_días_contigo.html">Los días contigo</a></li>
+            
+            
+        </ol>
+    </nav>
+    </header>
+
+</body>
+</html>

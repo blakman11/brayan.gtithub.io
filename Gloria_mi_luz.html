@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    font-family: "Palatino Linotype", serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #fff0f5, #ffe6e6);
+    color: #6a1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1.5rem;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #b22222;
+    border: 2px solid #ff9999;
+}
+
+/* Heart Animation */
+body::before {
+    content: "♥";
+    font-size: 5rem;
+    color: rgba(255, 192, 203, 0.8);
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    animation: float 3s infinite ease-in-out;
+}
+
+body::after {
+    content: "♥";
+    font-size: 4rem;
+    color: rgba(255, 182, 193, 0.8);
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+    animation: float 3s infinite ease-in-out reverse;
+}
+
+/* Keyframes for Floating Hearts */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+</style>
+</head>
+<body>
+    <p>Tu nombre resuena en mi pecho,
+        Gloria, mi calma, mi ser.
+        Contigo cada paso es perfecto,
+        sin ti no sabría cómo volver.</p>
+</body>
+</html>
